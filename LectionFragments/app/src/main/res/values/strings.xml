@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LectionFragments</string>
+    <string name="wtBD">Welcome to Bikini Botom</string>
+    <string name="imgSB">Obrazek Spange Boba</string>
+    <string name="its_arrow">To jest ARROW</string>
+    <string name="contact_preview">CONTACT</string>
+</resources>
