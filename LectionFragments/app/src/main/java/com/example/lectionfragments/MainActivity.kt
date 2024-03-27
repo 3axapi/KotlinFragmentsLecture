@@ -48,8 +48,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
+    /*    supportFragmentManager.beginTransaction()
             .replace(R.id.welcome_fragment_container, fragment)
-            .commit()
+            .commit()   */
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.setCustomAnimations(
+            R.anim.fade_in,
+            R.anim.fade_out,
+        )
     }
 }
