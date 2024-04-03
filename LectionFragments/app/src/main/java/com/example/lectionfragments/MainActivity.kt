@@ -53,8 +53,11 @@ class MainActivity : AppCompatActivity() {
             .commit()   */
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.setCustomAnimations(
-            R.anim.fade_in,
+            R.anim.slide_up,
             R.anim.fade_out,
         )
+        fragmentTransaction.replace(R.id.welcome_fragment_container,
+            fragment)
+        fragmentTransaction.commit()
     }
 }
