@@ -1,4 +1,4 @@
-package com.example.lectionfragments
+package com.example.lectionfragments.ui.gragments
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.view.MenuItem
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.lectionfragments.R
+import com.example.lectionfragments.ui.fragments.ContactFragment
 import com.google.android.material.appbar.MaterialToolbar
 
 class MainActivity : AppCompatActivity() {
@@ -56,7 +58,8 @@ class MainActivity : AppCompatActivity() {
             R.anim.slide_up,
             R.anim.fade_out,
         )
-        fragmentTransaction.replace(R.id.welcome_fragment_container,
+        fragmentTransaction.replace(
+            R.id.welcome_fragment_container,
             fragment)
         fragmentTransaction.commit()
     }
