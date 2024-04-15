@@ -7,11 +7,12 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SharedViewModel : ViewModel() {
-    private val selectedMessage = MutableLiveData<String>()
+    private val _msg = MutableLiveData<String>()
+    val selectedMessage: LiveData<String> = _msg
 
     fun setMessage(msg: String) {
-        selectedMessage.value = msg
-        Log.i("Viewmodel", "${selectedMessage.value}")
+        _msg.value = msg
+        // Log.i("Viewmodel", "${selectedMessage.value}")
     }
 
     fun getMessage() : LiveData<String> {

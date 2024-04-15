@@ -12,4 +12,14 @@
         android:textSize="20sp"
         android:text="@string/its_arrow"/>
 
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:columnWidth="90dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        />
+
 </LinearLayout>

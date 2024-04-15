@@ -7,19 +7,21 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.lectionfragments.R
 import com.example.lectionfragments.viewmodel.SharedViewModel
 
 class ContactFragment : Fragment() {
-    private lateinit var viewModel: SharedViewModel
+    //private lateinit var viewModel: SharedViewModel
+    private val viewModel: SharedViewModel by activityViewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    /*override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
-    }
+        viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java) // [SharedViewModel::class.java]
+    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater,
